@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Art from '../assets/img/art.jpg'
 import Arrow from '../assets/img/arrow.svg'
 
@@ -20,7 +21,6 @@ const Project = () => {
                         adipiscing elit. Enim morbi dui non aenean.Lorem
                         ipsum dolor sit amet, consectetur adipiscing elit.
                         Enim morbi dui non aenean.
-
                     </h1>
                 </div>
                 <div className='right-0 absolute bottom-5 mr-10 ' >
@@ -29,7 +29,6 @@ const Project = () => {
                     </h1>
                     <img w className='inline w-7' src={Arrow} alt="" />
                 </div>
-
             </div>
         </div>
     )

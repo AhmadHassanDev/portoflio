@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Ui from '../assets/img/ui.svg'
 
 const Skills = () => {

@@ -1,9 +1,8 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap, Power4 } from "gsap";
-import Logo from '../assets/img/logo.svg'
 import { TextPlugin } from "gsap/TextPlugin";
 
-
+import Logo from '../assets/img/logo.svg'
 import Me from '../assets/img/me.png'
 import Linked from '../assets/img/linked.svg'
 import Behance from '../assets/img/behance.svg'
@@ -15,27 +14,23 @@ const Hero = () => {
     gsap.registerPlugin(TextPlugin);
     const introRef = useRef();
     const navRef = useRef();
-    const secondRef = useRef();
+    const fristRef = useRef();
     const logoRef = useRef();
-    const thirdRef = useRef();
+    const secondRef = useRef();
     const boxRef = useRef();
     const textRef = useRef();
     const workRef = useRef();
-
-
 
     useEffect(() => {
         const t1 = gsap.timeline({});
         t1.fromTo(introRef.current, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 1 });
         t1.to(introRef.current, { opacity: 0, display: "none", delay: 1 });
-        t1.fromTo(secondRef.current, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 2 });
+        t1.fromTo(fristRef.current, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 2 });
         t1.from(logoRef.current, { rotation: 360 });
         t1.to(logoRef.current, { opacity: 0 });
-        t1.fromTo(thirdRef.current, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 1 });
+        t1.fromTo(secondRef.current, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 1 });
         t1.to(navRef.current, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 1, opacity: 1 })
         t1.to(workRef.current, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 1, opacity: 1 })
-
-
     })
 
     useEffect(() => {
@@ -49,19 +44,17 @@ const Hero = () => {
         t1.to(textRef.current, { text: "UX Researcher", duration: 2, delay: 2 });
         t1.to(textRef.current, { text: "UI Designer", duration: 2, delay: 2 });
         t1.to(textRef.current, { text: "Front-end Developer", duration: 2, delay: 2 });
-
     });
-
 
     return (
         <div>
             <span ref={navRef} style={{ opacity: 0 }}>
                 <Navbar />
             </span>
-            <div ref={secondRef} className=' w-screen bg-primary z-50 '>
+            <div ref={fristRef} className=' w-screen bg-primary z-50 '>
                 <div className='flex justify-center' >
                     <img ref={logoRef} className='m-auto absolute top-0 left-0 right-0 bottom-0' src={Logo} alt="" />
-                    <div className='' ref={thirdRef} >
+                    <div className='' ref={secondRef} >
                         <div className='grid  custom:grid-cols-8 mt-20'>
                             <div ref={boxRef} className='w-fit custom:ml-32 overflow-hidden col-span-5 text-left mx-10 custom:justify-start'>
                                 <h1 className='text-xl font-poppins-r ml-1'> Hey, my name is</h1>
@@ -92,7 +85,6 @@ const Hero = () => {
                 <Work />
             </div>
         </div >
-
     )
 }
 

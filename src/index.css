@@ -42,17 +42,14 @@ code {
   display: none;
 }
 
-/* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #0f172a;
 }
 
-/* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   background: #a90000;
 }
 
-/* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 24px;
   width: 24px;
@@ -60,23 +57,17 @@ code {
   pointer-events: none;
 }
 
-/* Color/shape of close button cross */
 .bm-cross {
   display: none;
   background: #bdc3c7;
   pointer-events: none;
 }
 
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
 }
 
-/* General sidebar styles */
 .bm-menu {
   background: #282828;
   padding: 2.5em 1.5em 0;
@@ -84,12 +75,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 100% !important;
 }
 
-/* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #282828;
 }
 
-/* Wrapper for item list */
 .bm-item-list {
   color: #ffffff;
   padding: 0.8em;
@@ -98,12 +87,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   position: static !important;
 }
 
-/* Individual item */
 .bm-item {
   display: inline-block;
 }
 
-/* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -112,6 +99,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   -webkit-animation: mover 2s infinite alternate;
   animation: mover 2s infinite alternate;
 }
+
 @-webkit-keyframes mover {
   0% {
     transform: translateY(0);

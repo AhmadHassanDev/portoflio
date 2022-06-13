@@ -9,7 +9,8 @@ const FormCTA = () => {
             <div className='w-full flex justify-between '>
                 <div className='flex w-full'>
                     <h1 className='inline ml-[5%] mt-[2%] custom:mt-0 text-left font-bebas custom:text-8xl text-4xl'>Say Hello
-                        <span className='text-4xl custom:text-9xl'> 👋 </span></h1>
+                        <span className='text-4xl custom:text-9xl'> 👋 </span>
+                    </h1>
                 </div>
                 <img className='w-14 mr-[5%] custom:w-24 cursor-pointer ' src={ArrowAlt} alt="" />
             </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Owl from '../components/Owl'
+
 import Project from './Project'
 import ArrowAlt from '../assets/img/arrowAlt.svg'
 import FormCTA from './FormCTA'
@@ -53,7 +54,6 @@ const Work = () => {
                 </div>
                 <Owl />
             </div>
-
             <div>
                 <Skills />
             </div>
