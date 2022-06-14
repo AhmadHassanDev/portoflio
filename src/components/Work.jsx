@@ -5,6 +5,7 @@ import Project from './Project'
 import ArrowAlt from '../assets/img/arrowAlt.svg'
 import FormCTA from './FormCTA'
 import Skills from './Skills'
+import Quote from './Quote'
 
 const Work = () => {
     return (
@@ -38,7 +39,7 @@ const Work = () => {
                     </h1>
                 </div>
                 <div className='w-full flex justify-center'>
-                    <h1 className='text-4xl font-poppins-sb mt-3 w-[92%]'>Real Fullstack front-end experience</h1>
+                    <h1 className='text-4xl font-poppins-sb mt-3 w-[92%] text-center'>Real Fullstack front-end experience</h1>
                 </div>
                 <div className='w-full flex justify-center pt-10'>
                     <h1 className='text-lg font-poppins-l text-center w-[85%]'>
@@ -56,6 +57,9 @@ const Work = () => {
             </div>
             <div>
                 <Skills />
+            </div>
+            <div>
+                <Quote />
             </div>
             <div>
                 <FormCTA />

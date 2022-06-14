@@ -1,11 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import './index.css';
-import App from './App';
+import About from './views/About';
+import Form from './views/Form'
+import Main from './views/Main'
+import Projects from './views/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <App />
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Main />} />
+      <Route path='/contact' element={<Form />} />
+      <Route path='/projects' element={<Projects />} />
+      <Route path='/about' element={<About />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 

@@ -9,10 +9,10 @@ import Behance from '../assets/img/behance.svg'
 import Github from '../assets/img/github.svg'
 import Work from './Work';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Hero = () => {
     gsap.registerPlugin(TextPlugin);
-    const introRef = useRef();
     const navRef = useRef();
     const fristRef = useRef();
     const logoRef = useRef();
@@ -23,8 +23,6 @@ const Hero = () => {
 
     useEffect(() => {
         const t1 = gsap.timeline({});
-        t1.fromTo(introRef.current, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 1 });
-        t1.to(introRef.current, { opacity: 0, display: "none", delay: 1 });
         t1.fromTo(fristRef.current, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 2 });
         t1.from(logoRef.current, { rotation: 360 });
         t1.to(logoRef.current, { opacity: 0 });
@@ -83,6 +81,9 @@ const Hero = () => {
             </div>
             <div style={{ opacity: 0 }} ref={workRef} >
                 <Work />
+            </div>
+            <div className='text-center'>
+                <Footer />
             </div>
         </div >
     )
