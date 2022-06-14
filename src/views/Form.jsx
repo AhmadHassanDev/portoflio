@@ -4,7 +4,6 @@ import Hand from '../assets/img/hand.svg'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-
 const Form = () => {
     return (
         <div className='mb-10'>

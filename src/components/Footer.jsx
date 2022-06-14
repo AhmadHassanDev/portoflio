@@ -9,16 +9,16 @@ const Footer = () => {
     return (
         <div className='mt-20'>
             <div className='grid grid-cols-3 justify-between w-[90%] ml-[5%] mr-[5%]'>
-                <div className='font-poppins-l '>
+                <div className='font-poppins-l custom:text-base text-xs'>
                     2022 AH - All Rights Reserved
                 </div>
-                <div>
+                <div className='text-xs custom:text-base'>
                     Made with <img className='inline w-7' src={Heart} alt="" />
                 </div>
                 <div>
-                    <img className='inline w-9 mx-3' src={Insta} alt="" />
-                    <img className='inline w-7 mx-3' src={Whatsapp} alt="" />
-                    <img className='inline w-7 mx-3' src={Face} alt="" />
+                    <img className='inline w-5 mx-2 custom:mx-3 custom:w-9 ' src={Insta} alt="" />
+                    <img className='inline w-5 mx-2 custom:mx-3 custom:w-7' src={Whatsapp} alt="" />
+                    <img className='inline w-5 mx-2 custom:mx-3 custom:w-7' src={Face} alt="" />
                 </div>
             </div>
         </div>
