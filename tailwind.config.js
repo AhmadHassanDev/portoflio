@@ -28,6 +28,7 @@ module.exports = {
                 'lightDark': '#333333',
                 'dark': '#1E1E1E',
                 'primary': '#282828',
+                'extraDark': '#121212',
             }
         },
     },

@@ -1,24 +1,51 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 
 import '../index.css'
 import Hand from '../assets/img/hand.svg'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Send from '../assets/img/send.svg'
+import Transition from '../components/Transition';
+import gsap from 'gsap';
+
 
 const Form = () => {
+    const contact = gsap.timeline();
+    const contactH1 = useRef(null);
+    const contactImg = useRef(null);
+    const contactNav = useRef(null);
+    useEffect(() => {
+        contact.from(contactNav.current, {
+            duration: .2,
+            x: -100,
+            opacity: 0,
+        }, '=-3.5')
+        contact.from(contactH1.current, {
+            duration: .6,
+            skewX: 10,
+            x: -100,
+            opacity: 0,
+        }, '=-3.2')
+        contact.from(contactImg.current, {
+            duration: .5,
+            y: -200,
+            opacity: 0,
+        }, '=-3')
+
+    })
     return (
         <div id="outer" className='mb-10'>
-            < span >
+            <Transition timeline={contact} />
+            < span ref={contactNav}>
                 <Navbar />
             </span >
-            <div className='overflow-y-hidden overflow-hidden w-[95%] ml-[2.5%] mr-[2.5%]'>
+            <div ref={contactH1} className='overflow-y-hidden overflow-hidden w-[95%] ml-[2.5%] mr-[2.5%]'>
                 <h1 className='font-bebas text-6xl pt-20 pb-7 custom:text-9xl text-center'>I Would
                     <span className='text-red'> Love</span> to get in
                     <span className='text-purple'> touch</span>
                 </h1>
             </div>
-            <img className='min-w-[105%] ml-[-2%]' src={Hand} alt="" />
+            <img ref={contactImg} className='min-w-[105%] ml-[-2%]' src={Hand} alt="" />
             <div className='mb-48'>
                 <form action="">
                     <div className='flex flex-col pt-10'>

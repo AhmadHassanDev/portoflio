@@ -1,5 +1,6 @@
 import React from 'react'
 import Owl from '../components/Owl'
+import { Link } from "react-router-dom";
 
 import Project from './Project'
 import ArrowAlt from '../assets/img/arrowAlt.svg'
@@ -25,11 +26,12 @@ const Work = () => {
             <Project />
             <Project />
             <div className='cursor-pointer flex w-full pb-[7%] text-8xl float-left pt-5 bg-primary '>
-                <h1 className='inline ml-[5%] mt-[2%]  text-left text-transparent bg-clip-text  
+                <h1 className='inline ml-[5%] mt-[2%] text-5xl custom:text-8xl text-left text-transparent bg-clip-text  
         bg-gradient-to-r from-cyan via-purple to-red font-bebas'>
                     All Projects
                 </h1>
-                <img w className='inline w-14 mt-4' src={ArrowAlt} alt="" />
+                <Link className='inline custom:w-20 w-14 mt-0
+                ' to='/projects'> <img src={ArrowAlt} alt="" /></Link>
             </div>
             <div className='bg-lightDark custom-mt-20'>
                 <div className='w-full flex justify-center'>

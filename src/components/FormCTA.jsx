@@ -1,5 +1,6 @@
 import React from 'react'
 import ArrowAlt from '../assets/img/arrowAlt.svg'
+import { Link } from "react-router-dom";
 
 const FormCTA = () => {
     return (
@@ -12,10 +13,12 @@ const FormCTA = () => {
                         <span className='text-4xl custom:text-9xl'> 👋 </span>
                     </h1>
                 </div>
-                <img className='w-14 mr-[5%] custom:w-24 cursor-pointer ' src={ArrowAlt} alt="" />
+                <Link to="/contact" className="w-14 mr-[5%] custom:w-24 cursor-pointer"> <img src={ArrowAlt} alt="" /></Link>
             </div>
         </div>
     )
 }
 
+
 export default FormCTA
+
