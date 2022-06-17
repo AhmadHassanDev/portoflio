@@ -1,66 +1,39 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 
 import '../index.css'
 import Hand from '../assets/img/hand.svg'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Send from '../assets/img/send.svg'
-import Transition from '../components/Transition';
-import TransitionMobile from '../components/TransitionMobile'
 import gsap from 'gsap';
 
 
 const Form = () => {
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return {
-            width,
-        };
-    }
-
-    function useWindowDimensions() {
-        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
-
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return windowDimensions;
-    }
-    const { width } = useWindowDimensions();
-    const contact = gsap.timeline();
     const contactH1 = useRef(null);
     const contactImg = useRef(null);
     const contactNav = useRef(null);
     useEffect(() => {
+        const contact = gsap.timeline();
         contact.from(contactNav.current, {
             duration: .2,
             x: -100,
             opacity: 0,
-        }, '=-3.5')
+        })
         contact.from(contactH1.current, {
             duration: .6,
             skewX: 10,
             x: -100,
             opacity: 0,
-        }, '=-3.2')
+        })
         contact.from(contactImg.current, {
             duration: .5,
             y: -200,
             opacity: 0,
-        }, '=-3')
+        })
 
-    })
+    }, [])
     return (
-        <div id="outer" className='mb-10 overflow-x-hidden'>
-            <>   {width > 900 ? <Transition timeline={contact} />
-                : <TransitionMobile timeline={contact} />}
-            </>
+        <div className='mb-10 '>
             < span ref={contactNav}>
                 <Navbar />
             </span >

@@ -46,39 +46,39 @@ const Owl = () => {
             </div>
             <OwlCarousel items={items} dots={false} autoplay={true}
                 autoplayTimeout={3000} slidetransition={'linear'} autoplaySpeed={3000}
-                fluidSpeed={3000} mdartSpeed={3000} animateIn={true}
+                fluidSpeed={3000} animateIn={true}
                 autoplayHoverPause={false} className='owl-theme' loop={true} margin={1} nav={false}>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1' alt="" src={ReactIcon} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Vue} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Tailwind} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Bootstrap} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Node} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Flutter} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Git} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Figma} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Xd} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Illustrator} />
                 </div>
-                <div class='item'>
+                <div className='item'>
                     <img className=' w-full custom:px-5 px-1 md:px-2' alt="" src={Github} />
                 </div>
             </OwlCarousel>

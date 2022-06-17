@@ -1,25 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Spin as Hamburger } from 'hamburger-react'
-import { elastic as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'
 import { Link } from "react-router-dom";
+import '../index.css'
 
 import Logo from '../assets/img/logo.svg'
 import Dark from '../assets/img/dark.svg'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
-
     const handleClick = () => setNav(!nav);
-    const handleScroll = () => {
-    }
+    useEffect(() => {
+        let body = document.getElementsByTagName('body')[0];
+        if (nav === true) {
+            body.classList.add("noScroll")
 
-    const onClickMethod = () => {
-        handleClick();
-        handleScroll();
-    }
+        } else if (nav === false) {
+            body.classList.remove("noScroll")
+        }
+
+    }, [nav]);
 
     return (
-        <div>
+        <div id='outer'>
             <div className='flex w-[80%] justify-between ml-[10%] mr-[10%] pt-[3%] pb-[3%]'>
                 <div>
                     <Link to="/"> <img className='w-20 inline' src={Logo} alt="" /> </Link>
@@ -33,16 +36,16 @@ const Navbar = () => {
                 <div className='hidden md:inline'>
                     <img className='w-10 inline ' src={Dark} alt="" />
                 </div>
-                <div className=' md:hidden  tems-end pt-2 text-white ' onClick={onClickMethod}>
-                    <Hamburger className="hamb" toggled={nav} toggle={setNav} />
+                <div id='handleNav' className=' md:hidden  tems-end pt-2 text-white' onClick={handleClick}>
+                    <Hamburger id="toogle" className="hamb" toggled={nav} toggle={setNav} />
                 </div>
             </div >
             <div className='flex md:hidden bg-dark-800'>
-                <Menu right Overlay className='' pageWrapId={"page"} outerContainerId={"outer"} isOpen={nav} >
-                    <Link to="/" className=' mr-5'>  <li className='font-poppins-r text-xl inline my-5 mr-5'>Home</li></Link>
-                    <Link to="/contact" className='my-5 mr-5'> <li className='font-poppins-r text-xl inline '>Contact</li> </Link>
-                    <Link to="/about" className='my-5 mr-5'> <li className='font-poppins-r text-xl inline my-5 mr-5'>About</li></Link>
-                    <Link to="/projects" className='my-5 mr-5'><li className='font-poppins-r text-xl inline my-5 mr-5'>Projects</li></Link>
+                <Menu right className='' isOpen={nav} >
+                    <Link to="/" className=' mr-5'>  <li id='homeSc' className='font-poppins-r text-xl inline my-5 mr-5'>Home</li></Link>
+                    <Link to="/contact" className='my-5 mr-5'> <li id='contactSc' className='font-poppins-r text-xl inline '>Contact</li> </Link>
+                    <Link to="/about" className='my-5 mr-5'> <li id='aboutSc' className='font-poppins-r text-xl inline my-5 mr-5'>About</li></Link>
+                    <Link to="/projects" className='my-5 mr-5'><li id='projectsSc' className='font-poppins-r text-xl inline my-5 mr-5'>Projects</li></Link>
                     <img className='w-10 inline pt-2' src={Dark} alt="" />
                 </Menu>
             </div>
