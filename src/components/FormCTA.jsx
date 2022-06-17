@@ -13,7 +13,7 @@ const FormCTA = () => {
                         <span className='text-4xl custom:text-9xl'> 👋 </span>
                     </h1>
                 </div>
-                <Link to="/contact" className="w-14 mr-[5%] custom:w-24 cursor-pointer"> <img src={ArrowAlt} alt="" /></Link>
+                <Link to="/contact" className="w-16 mr-[5%] custom:w-40 cursor-pointer"> <img src={ArrowAlt} alt="" /></Link>
             </div>
         </div>
     )

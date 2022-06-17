@@ -1,20 +1,76 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react'
+
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import Transition from '../components/Transition';
+import TransitionMobile from '../components/TransitionMobile';
+import gsap from 'gsap';
+
+
 
 const About = () => {
+
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return {
+            width,
+        };
+    }
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
+    const about = gsap.timeline();
+    const aboutH1 = useRef(null);
+    const aboutNav = useRef(null);
+    const aboutBody = useRef(null);
+
+    useEffect(() => {
+        about.from(aboutNav.current, {
+            duration: .2,
+            x: -100,
+            opacity: 0,
+        }, '=-3.5')
+        about.from(aboutH1.current, {
+            duration: .6,
+            skewX: 10,
+            x: -100,
+            opacity: 0,
+        }, '=-3.2')
+        about.from(aboutBody.current, {
+            duration: .5,
+            y: -200,
+            opacity: 0,
+        }, '=-3')
+    })
+
     return (
         <div>
-            <span>
+            <>   {width > 900 ? <Transition timeline={about} />
+                : <TransitionMobile timeline={about} />}  </>
+            <span ref={aboutNav}>
                 <Navbar />
             </span>
             <div>
-                <h1 className='pt-10 text-center w-[90%] ml-[5%] mr-[5%]
+                <h1 ref={aboutH1} className='pt-10 text-center w-[90%] ml-[5%] mr-[5%]
                 text-8xl font-bebas'>
                     Just A little Bit <br /> <span className='text-transparent bg-clip-text  
                  bg-gradient-to-r from-cyan via-purple to-red'>About Me</span>
                 </h1>
-                <div className='grid grid-cols-1 custom:grid-cols-2 pt-20'>
+                <div ref={aboutBody} className='grid grid-cols-1 custom:grid-cols-2 pt-20'>
                     <div className='w-[90%] ml-[5%] mr-[5%] text-left font-poppins-r text-xl'>
                         <h1 className='w-[70%] ml-[15%] mr-[15%] '>Hey there, my name is Ahmed Hassan, an Egyptian 24 years old CS Graduate.
                             I graduated from MIU in the year 2021, and since then i worked on many freelance

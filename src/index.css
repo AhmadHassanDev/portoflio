@@ -25,7 +25,11 @@
 body {
   background-color: #282828;
   color: #ffffff;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+#root {
+  overflow-x: hidden !important;
 }
 
 code {

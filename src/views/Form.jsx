@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 
 import '../index.css'
 import Hand from '../assets/img/hand.svg'
@@ -6,10 +6,33 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Send from '../assets/img/send.svg'
 import Transition from '../components/Transition';
+import TransitionMobile from '../components/TransitionMobile'
 import gsap from 'gsap';
 
 
 const Form = () => {
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return {
+            width,
+        };
+    }
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+    const { width } = useWindowDimensions();
     const contact = gsap.timeline();
     const contactH1 = useRef(null);
     const contactImg = useRef(null);
@@ -34,8 +57,10 @@ const Form = () => {
 
     })
     return (
-        <div id="outer" className='mb-10'>
-            <Transition timeline={contact} />
+        <div id="outer" className='mb-10 overflow-x-hidden'>
+            <>   {width > 900 ? <Transition timeline={contact} />
+                : <TransitionMobile timeline={contact} />}
+            </>
             < span ref={contactNav}>
                 <Navbar />
             </span >
