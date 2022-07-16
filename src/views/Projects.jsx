@@ -1,17 +1,20 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
+import { Link } from "react-router-dom";
 import gsap from 'gsap';
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Greek from '../assets/img/greek.png'
 
+import { ProjectsMap } from '../model/Project';
+
 const Projects = () => {
-    const projects = gsap.timeline();
     const projectsH1 = useRef(null);
     const projectsNav = useRef(null);
     const projectsBody = useRef(null);
 
     useEffect(() => {
+        const projects = gsap.timeline();
         projects.from(projectsNav.current, {
             duration: .2,
             x: -100,
@@ -33,6 +36,15 @@ const Projects = () => {
 
     return (
         <div>
+            <div>
+                {[ProjectsMap.map((s) => (
+                    <div key={s.id}>
+                        <Link to={`/projects/${s.id}`}>{s.title} </Link>
+                    </div>
+                )
+                )]}
+            </div>
+
             <span ref={projectsNav}>
                 <Navbar />
             </span>

@@ -22,15 +22,23 @@ const Navbar = () => {
     }, [nav]);
 
     return (
-        <div id='outer'>
-            <div className='flex w-[80%] justify-between ml-[10%] mr-[10%] pt-[3%] pb-[3%]'>
+        <div>
+            <div className='flex w-[80%] justify-between ml-[10%] mr-[10%] pt-[8%] custom:pt-[5%] pb-[3%]'>
                 <div>
-                    <Link to="/"> <img className='w-20 inline' src={Logo} alt="" /> </Link>
+                    <Link to="/"> <img className='w-20 custom:mt-[-15px] inline' src={Logo} alt="" /> </Link>
                     <ul className=' ml-10 hidden md:inline'>
-                        <Link to="/">  <li className='font-poppins-r text-xl inline mr-5'>Home</li></Link>
-                        <Link to="/contact"> <li className='font-poppins-r text-xl inline mr-5'>Contact</li> </Link>
-                        <Link to="/about"><li className='font-poppins-r text-xl inline mr-5'>About</li></Link>
-                        <Link to="/projects"><li className='font-poppins-r text-xl inline mr-5'>Projects</li></Link>
+                        <Link to="/">  <li className='font-poppins-r text-xl inline mr-5
+                        hover:text-transparent hover:bg-clip-text hover:text-3xl hover:font-poppins-sb
+                        hover:bg-gradient-to-r from-cyan via-purple to-red'>Home</li></Link>
+                        <Link to="/contact"> <li className='
+                        hover:text-transparent hover:bg-clip-text hover:text-3xl hover:font-poppins-sb
+                        hover:bg-gradient-to-r from-cyan via-purple to-red font-poppins-r text-xl inline mr-5'>Contact</li> </Link>
+                        <Link to="/about"><li className='
+                        hover:text-transparent hover:bg-clip-text hover:text-3xl hover:font-poppins-sb
+                        hover:bg-gradient-to-r from-cyan via-purple to-red font-poppins-r text-xl inline mr-5'>About</li></Link>
+                        <Link to="/projects"><li className='
+                        hover:text-transparent hover:bg-clip-text hover:text-3xl hover:font-poppins-sb
+                        hover:bg-gradient-to-r from-cyan via-purple to-red font-poppins-r text-xl inline mr-5'>Projects</li></Link>
                     </ul>
                 </div>
                 <div className='hidden md:inline'>
