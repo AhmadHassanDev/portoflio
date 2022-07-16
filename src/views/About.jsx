@@ -2,38 +2,12 @@ import React, { useRef, useEffect, useState } from 'react'
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import Transition from '../components/Transition';
-import TransitionMobile from '../components/TransitionMobile';
 import gsap from 'gsap';
 
 
 
 const About = () => {
-
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return {
-            width,
-        };
-    }
-
-    function useWindowDimensions() {
-        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
-
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return windowDimensions;
-    }
-
-    const { width } = useWindowDimensions();
-    const about = gsap.timeline();
+    const about = gsap.timeline({ repeat: 0 });
     const aboutH1 = useRef(null);
     const aboutNav = useRef(null);
     const aboutBody = useRef(null);
@@ -43,24 +17,22 @@ const About = () => {
             duration: .2,
             x: -100,
             opacity: 0,
-        }, '=-3.5')
+        })
         about.from(aboutH1.current, {
             duration: .6,
             skewX: 10,
             x: -100,
             opacity: 0,
-        }, '=-3.2')
+        })
         about.from(aboutBody.current, {
             duration: .5,
             y: -200,
             opacity: 0,
-        }, '=-3')
-    })
+        })
+    }, [])
 
     return (
         <div>
-            <>   {width > 900 ? <Transition timeline={about} />
-                : <TransitionMobile timeline={about} />}  </>
             <span ref={aboutNav}>
                 <Navbar />
             </span>

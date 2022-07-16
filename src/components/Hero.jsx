@@ -13,13 +13,13 @@ import Footer from './Footer';
 
 const Hero = () => {
     gsap.registerPlugin(TextPlugin);
-    const navRef = useRef();
-    const fristRef = useRef();
-    const logoRef = useRef();
-    const secondRef = useRef();
-    const boxRef = useRef();
-    const textRef = useRef();
-    const workRef = useRef();
+    const navRef = useRef(null);
+    const fristRef = useRef(null);
+    const logoRef = useRef(null);
+    const secondRef = useRef(null);
+    const boxRef = useRef(null);
+    const textRef = useRef(null);
+    const workRef = useRef(null);
 
     useEffect(() => {
         const t1 = gsap.timeline({});
@@ -51,16 +51,16 @@ const Hero = () => {
             </span>
             <div ref={fristRef} className=' w-screen bg-primary z-50 '>
                 <div className='flex justify-center' >
-                    <img ref={logoRef} className='m-auto absolute top-0 left-0 right-0 bottom-0' src={Logo} alt="" />
+                    <img ref={logoRef} className='m-auto absolute top-52 left-0 right-0 ' src={Logo} alt="" />
                     <div className='' ref={secondRef} >
                         <div className='grid  custom:grid-cols-8 mt-20'>
-                            <div ref={boxRef} className='w-fit custom:ml-32 overflow-hidden col-span-5 text-left mx-10 custom:justify-start'>
+                            <div ref={boxRef} className='w-fit custom:ml-32 overflow-hidden col-span-5 text-left ml-7 custom:justify-start'>
                                 <h1 className='text-xl font-poppins-r ml-1'> Hey, my name is</h1>
                                 <h1 className='text-9xl mt-1 mb-5 font-bebas text-transparent bg-clip-text  
                                 bg-gradient-to-r from-cyan via-purple to-red'>Ahmed Hassan</h1>
                                 <h1 className='text-3xl mb-5 font-poppins-sb'>And i am a <span className='text-transparent bg-clip-text  
                                 bg-gradient-to-r from-cyan via-purple to-red' ref={textRef}></span></h1>
-                                <h1 className='text-base max-w-md font-poppins-l'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <h1 className='text-base max-w-md w-[90%] font-poppins-l'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Tincidunt nunc orci tristique a donec dictumst tristique adipiscing.
                                     Aliquet netus hac ultricies velit pellentesque ut euismod eget sit.
                                 </h1>
