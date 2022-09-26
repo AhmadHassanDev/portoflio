@@ -41,8 +41,6 @@ const Projects = () => {
 
     return (
         <div>
-
-
             <span ref={projectsNav}>
                 <Navbar />
             </span>
@@ -62,10 +60,9 @@ const Projects = () => {
                         <div key={s.id} onClick={() => navigate(`${s.id}`)}
                             className='bg-dark w-[90%] mr-[5%] ml-[5%] h-[450px] 
                         custom:w-[90%] custom:ml-[5%] custom:mr-[10%] custom:h-[500px]
-                        mb-20 custom:mb-0  mt-10 rounded-xl'>
+                        custom:mb-20 mb-2  mt-14 rounded-xl'>
                             <img style={{ background: "radial-gradient(transparent, black)," }}
-                                className='w-full object-cover h-full rounded-xl' src={Greek} alt="" />
-                            <h1>{s.title}</h1>
+                                className='w-full object-cover h-full rounded-xl' src={require('../assets/img/' + s.imgTitle + '.png')} alt="" />
                         </div>
                     )
                     )]}
