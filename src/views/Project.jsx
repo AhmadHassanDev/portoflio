@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
-import Greek from '../assets/img/greek.png'
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { ProjectsMap } from '../model/Project';
 
 const Project = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const { id } = useParams()
     return (
         <div>
@@ -14,10 +18,11 @@ const Project = () => {
                 <Navbar />
             </span>
             <div className='w-full h-[80%]'>
-                <img src={Greek} alt="" />
+                <img src={require('../assets/img/' + ProjectsMap[id - 1].headerImg[0] + '.png')} alt="" />
             </div>
             <div>
                 <h1 className='ml-20 mt-10 mb-2 font-bebas text-7xl'>Tools used</h1>
+                <h1>{ProjectsMap[id - 1].title}</h1>
                 <h1 className='ml-20 mt-3 mb-10 font-poppins-l text-xl'>The tools used in creating the projects</h1>
                 <div className='flex flex-row ml-20'>
                     <div className='w-20 h-20 rounded-full mr-10 bg-white '></div>

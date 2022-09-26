@@ -22,6 +22,10 @@ const Hero = () => {
     const workRef = useRef(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    useEffect(() => {
         const t1 = gsap.timeline({});
         t1.fromTo(fristRef.current, { scaleX: 0 }, { scaleX: 1, transformOrigin: 'left', ease: Power4.easeInOut, duration: 2 });
         t1.from(logoRef.current, { rotation: 360 });
@@ -60,9 +64,8 @@ const Hero = () => {
                                 bg-gradient-to-r from-cyan via-purple to-red'>Ahmed Hassan</h1>
                                 <h1 className='text-3xl mb-5 font-poppins-sb'>And i am a <span className='text-transparent bg-clip-text  
                                 bg-gradient-to-r from-cyan via-purple to-red' ref={textRef}></span></h1>
-                                <h1 className='text-base max-w-md w-[90%] font-poppins-l'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Tincidunt nunc orci tristique a donec dictumst tristique adipiscing.
-                                    Aliquet netus hac ultricies velit pellentesque ut euismod eget sit.
+                                <h1 className='text-base max-w-md w-[90%] font-poppins-l'>A real fullstack front-end experince at the palms of your hand!
+                                    creating your next digital experience from scratch is my passion, UX Reaserch, UI Design, and Front-end development on demand
                                 </h1>
                                 <ul className='flex mt-10'>
                                     <li className='mb-8 mr-7'> <a href="/#"> <img className='w-12' src={Linked} alt="" /></a></li>

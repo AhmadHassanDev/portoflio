@@ -1,14 +1,19 @@
 import React from 'react'
 import Owl from '../components/Owl'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Project from './Project'
 import ArrowAlt from '../assets/img/arrowAlt.svg'
+import Art from '../assets/img/art.jpg'
 import FormCTA from './FormCTA'
 import Skills from './Skills'
 import Quote from './Quote'
+import Weatherly from '../assets/img/weatherly.png'
+import Tienda from '../assets/img/tienda.png'
+import Jpadel from '../assets/img/jpadel.png'
 
 const Work = () => {
+    const navigate = useNavigate()
     return (
         <div className='custom:mt-[0%] bg-primary'>
             <div className='w-full flex justify-center'>
@@ -22,16 +27,24 @@ const Work = () => {
                     Below you’ll find some of my favourite projects
                 </h1>
             </div>
-            <Project />
-            <Project />
-            <Project />
-            <div className='cursor-pointer flex w-full pb-[7%] text-8xl float-left pt-5 custom:pt-10 bg-primary '>
+            <div className='cursor-pointer'>
+                <Project title="Weatherly" body="Weatherly is a premuim weather application that focuses on beautiful UI while 
+            creating robust and great features. Weatherly features Big Bold icons, stunning Typography, and great features like
+            7 day forecasts, Weather alerts and notifications, and much more!" img={Weatherly} />
+            </div>
+            <div className='cursor-pointer' onClick={() => navigate('projects/1')}>
+                <Project title="Tienda" body="Tienda-EG is a POS system, that supplies it's clients with excellent POS devices and software,
+                they have alot of platform leading features and over 40 satsified clients that vouch for thier excellence" img={Tienda} />
+            </div>
+            <div className='cursor-pointer'>
+                <Project img={Jpadel} title={"JPadel App Redesign"} body={"JPadel is an egyptian Padel tennis leader and innovater, they have a flutter application on both the App and Play stores that enables you to reserve courts, sign up to tournaments, and much more. This is a redesign of thier application!"} />
+            </div>
+            <div onClick={() => navigate("/projects")} className='cursor-pointer flex w-full pb-[7%] text-8xl float-left pt-5 custom:pt-10 bg-primary '>
                 <h1 className='inline ml-[5%] mt-[2%] text-5xl custom:text-8xl text-left text-transparent bg-clip-text  
         bg-gradient-to-r from-cyan via-purple to-red font-bebas'>
                     All Projects
                 </h1>
-                <Link className='inline custom:w-20 w-14 mt-0 custom:mt-7
-                ' to='/projects'> <img src={ArrowAlt} alt="" /></Link>
+                <img src={ArrowAlt} alt="" />
             </div>
             <div className='bg-lightDark custom-mt-20'>
                 <div className='w-full flex justify-center'>
@@ -45,14 +58,10 @@ const Work = () => {
                 </div>
                 <div className='w-full flex justify-center pt-10'>
                     <h1 className='text-lg font-poppins-l text-center w-[85%]'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel ante proin quam sed quam scelerisque.
-                        Morbi et ipsum arcu lacus sem fermentum urna fermentum. Cras ac fringilla libero accumsan,
-                        etiam volutpat sit nunc. Amet scelerisque morbi nec, cursus lectus id.
-                        Facilisis cursus molestie pulvinar massa tristique leo, pellentesque egestas
-                        purus. Arcu tristique interdum quis turpis facilisi sed ut metus. Mauris hendrerit
-                        euismod amet elit volutpat ultrices porttitor urna vitae. Quam dolor aliquet elit
-                        sapien eu tempus ultricies ultrices eu. Ut elementum volutpat in ut nisi,
-                        blandit interdum. Donec et bibendum iaculis eget netus sit sed. Ultrices sit sed quam et malesuada.
+                        Being a Computer Science graduate, technicalities are of immense importance to me, but i have gone on
+                        to discover how equally important it is to have a user centered design and plan in order for your application
+                        or service to be met with any success. That's why i went on to learn UX Research, UI Design, and became versed with
+                        the latest design tools and fundamentals
                     </h1>
                 </div>
                 <Owl />

@@ -13,6 +13,10 @@ const About = () => {
     const aboutBody = useRef(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    useEffect(() => {
         about.from(aboutNav.current, {
             duration: .2,
             x: -100,

@@ -12,6 +12,11 @@ const Form = () => {
     const contactH1 = useRef(null);
     const contactImg = useRef(null);
     const contactNav = useRef(null);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     useEffect(() => {
         const contact = gsap.timeline();
         contact.from(contactNav.current, {

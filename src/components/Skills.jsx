@@ -1,6 +1,9 @@
 import React from 'react'
 
-import Ui from '../assets/img/ui.svg'
+import UI from '../assets/img/uidesign.svg'
+import UX from '../assets/img/uxresearch.svg'
+import Dev from '../assets/img/development.svg'
+
 
 const Skills = () => {
     return (
@@ -8,60 +11,46 @@ const Skills = () => {
             <div className='grid custom:grid-cols-3 gap-10 custom:gap-0 justify-center items-center mt-10 custom:mt-0  custom:pt-32 lg:px-20'>
                 <div>
                     <h1 className='text-center font-bebas text-4xl  mb-8'>
-                        UX/UI Desinger
+                        UX Researcher
                     </h1>
                     <div className='flex justify-center items-center'>
                         <div className=' flex items-center justify-center flex-col w-[70%] bg-dark h-[27rem] rounded-xl'>
-                            <img className='w-36' src={Ui} alt="" />
+                            <img className='w-36' src={UX} alt="" />
                             <h1 className='w-[80%] font-poppins-l mt-[5%] text-center'>
-                                UX Research and UI design
-                                are the first steps in
-                                creating a unqiue & perfect
-                                user experinece, these 2
-                                steps are integral in
-                                making sure the user
-                                doesn’t face any ambiguity
-                                while using the app/site
+                                No digital experince can compete and win on the market
+                                without a good user focused mentality and strong understanding
+                                of the market and what their users actually need and think of their product
+                                and other competitive products too
                             </h1>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h1 className='text-center font-bebas text-4xl mb-8'>
-                        UX/UI Desinger
+                        UI Design
                     </h1>
                     <div className='flex justify-center items-center'>
                         <div className=' flex items-center justify-center flex-col w-[70%] bg-dark h-[27rem] rounded-xl'>
-                            <img className='w-36' src={Ui} alt="" />
+                            <img className='w-36' src={UI} alt="" />
                             <h1 className='w-[80%] font-poppins-l mt-[5%] text-center'>
-                                UX Research and UI design
-                                are the first steps in
-                                creating a unqiue & perfect
-                                user experinece, these 2
-                                steps are integral in
-                                making sure the user
-                                doesn’t face any ambiguity
-                                while using the app/site
+                                A Good UI can make the difference between a great experince and a bad one,
+                                people appreciate beautifull applications and are more likely to use them
+                                over poorly designed ones even if the both of them give the same result
                             </h1>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h1 className='text-center font-bebas text-4xl mb-8'>
-                        UX/UI Desinger
+                        Front-end Development
                     </h1>
                     <div className='flex justify-center items-center'>
                         <div className=' flex items-center justify-center flex-col w-[70%] bg-dark h-[27rem] rounded-xl'>
-                            <img className='w-36' src={Ui} alt="" />
+                            <img className='w-36' src={Dev} alt="" />
                             <h1 className='w-[80%] font-poppins-l mt-[5%] text-center'>
-                                UX Research and UI design
-                                are the first steps in
-                                creating a unqiue & perfect
-                                user experinece, these 2
-                                steps are integral in
-                                making sure the user
-                                doesn’t face any ambiguity
-                                while using the app/site
+                                Transforming the UX/UI Designs to a real live application is the last step of creating
+                                your perfect experince. Using the most upto date frameworks and methods to create the perfect
+                                service for you is my priority
                             </h1>
                         </div>
                     </div>
