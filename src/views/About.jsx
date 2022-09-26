@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
@@ -33,7 +33,7 @@ const About = () => {
             y: -200,
             opacity: 0,
         })
-    }, [])
+    }, [about])
 
     return (
         <div>
@@ -65,7 +65,7 @@ const About = () => {
                         <img src={Grad} className="inline w-7" alt="" /> CV
                     </button>
                 </div>
-                <h1 className='text-center text-6xl font-bebas pt-20'>Some Stuff i am  <span
+                <h1 className='text-center text-6xl font-bebas pt-20 w-[90%] m-auto'>Some Stuff i am  <span
                     className='text-transparent bg-clip-text  
                 bg-gradient-to-r from-cyan via-purple to-red'> passionate about </span></h1>
                 <div className='w-[90%] ml-[5%] mr-[5%] pt-20'>
@@ -103,7 +103,7 @@ const About = () => {
             <h1 className='text-center text-6xl font-bebas pt-20'><span
                 className='text-transparent bg-clip-text  
                 bg-gradient-to-r from-cyan via-purple to-red'> Favourite Quote </span></h1>
-            <h1 className='text-center text-6xl font-bebas pb-5 pt-10'>"It always seems impossible until it’s done"</h1>
+            <h1 className='text-center text-6xl font-bebas pb-5 pt-10 w-[90%] m-auto'>"It always seems impossible until it’s done"</h1>
             <h2 className='text-center text-3xl font-poppins-l'>-Nelson Mandela-</h2>
             <h1 className='text-center text-6xl font-bebas pb-10 pt-20'>Some of my<span
                 className='text-transparent bg-clip-text  

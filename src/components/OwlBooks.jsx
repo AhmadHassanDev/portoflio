@@ -41,8 +41,8 @@ const OwlBooks = () => {
     return (
         <div className='pt-16 pb-5 mx-10'>
             <div className='hidden'>
-                {windowDimenion.winWidth > 900 ? items = 8 : items = 4}
-                {windowDimenion.winWidth > 900 ? items = 8 : items = 4}
+                {windowDimenion.winWidth > 900 ? items = 6 : items = 2}
+                {windowDimenion.winWidth > 900 ? items = 6 : items = 2}
             </div>
             <OwlCarousel items={items} dots={false} autoplay={true}
                 autoplayTimeout={3000} slidetransition={'linear'} autoplaySpeed={3000}

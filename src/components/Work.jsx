@@ -1,10 +1,9 @@
 import React from 'react'
 import Owl from '../components/Owl'
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Project from './Project'
 import ArrowAlt from '../assets/img/arrowAlt.svg'
-import Art from '../assets/img/art.jpg'
 import FormCTA from './FormCTA'
 import Skills from './Skills'
 import Quote from './Quote'

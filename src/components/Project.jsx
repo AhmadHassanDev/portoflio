@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Art from '../assets/img/art.jpg'
 import Arrow from '../assets/img/arrow.svg'
 
 const Project = (props) => {
