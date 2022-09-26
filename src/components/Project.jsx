@@ -13,10 +13,11 @@ const Project = (props) => {
                 <div>
                     <h1 className='text-left md:pl-10 pt-4 
                         md:text-4xl md:font-poppins-sb md:mb-5
-                        text-sm pl-5'>{props.title}</h1>
+                        text-base pl-5'>{props.title}</h1>
                 </div>
-                <div>
-                    <h1 className=' text-xs pl-5 pt-3 w-[90%] pb-7 md:pl-10 font-poppins-l text-left md:text-xl'>
+                <div className=''>
+                    <h1 className=' 
+                     text-xs pl-5 pt-3 w-[90%] pb-7 md:pl-10 font-poppins-l text-left md:text-xl'>
                         {props.body}
                     </h1>
                 </div>

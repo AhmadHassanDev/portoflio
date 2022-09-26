@@ -44,7 +44,7 @@ const Work = () => {
         bg-gradient-to-r from-cyan via-purple to-red font-bebas'>
                     All Projects
                 </h1>
-                <img src={ArrowAlt} alt="" />
+                <img className='w-[10%] ml-2' src={ArrowAlt} alt="" />
             </div>
             <div className='bg-lightDark custom-mt-20'>
                 <div className='w-full flex justify-center'>
