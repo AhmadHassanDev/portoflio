@@ -42,7 +42,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className='hidden md:inline'>
-                    <img className='w-10 inline ' src={Dark} alt="" />
+                    {/*<img className='w-10 inline ' src={Dark} alt="" />*/}
                 </div>
                 <div id='handleNav' className=' md:hidden  tems-end pt-2 text-white' onClick={handleClick}>
                     <Hamburger id="toogle" className="hamb" toggled={nav} toggle={setNav} />
@@ -54,7 +54,7 @@ const Navbar = () => {
                     <Link to="/contact" className='my-5 mr-5'> <li id='contactSc' className='font-poppins-r text-xl inline '>Contact</li> </Link>
                     <Link to="/about" className='my-5 mr-5'> <li id='aboutSc' className='font-poppins-r text-xl inline my-5 mr-5'>About</li></Link>
                     <Link to="/projects" className='my-5 mr-5'><li id='projectsSc' className='font-poppins-r text-xl inline my-5 mr-5'>Projects</li></Link>
-                    <img className='w-10 inline pt-2' src={Dark} alt="" />
+                    {/*<img className='w-10 inline pt-2' src={Dark} alt="" />*/}
                 </Menu>
             </div>
         </div >

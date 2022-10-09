@@ -2,19 +2,69 @@ export const ProjectsMap = [{
         id: 1,
         headerImg: ["tienda", "../assets/img/tienda.png"],
         imgTitle: ["tienda"],
-        title: "Tienda",
-        toolsUsed: ["PS, Figma, Behance"],
-        details: "details",
-        shoots: ["greek", "../assets/img/greek.png"],
+        title: "Tienda Website",
+        toolsUsed: [
+            ["figma"],
+            ["illustrator"]
+        ],
+        details: "This Project is a website design and implentation, first of all the Logo design was the first step, i used illustrator for this came up with a few ideas, and then the sta    holders selected their favourite pick.",
+        details2: "Afterwards with the brand identity and logo created and finished, i started creating low-fi concepts for how the landing page would look like, then started to slowly transform these desings into high fidelity designs, adding custom UI elements and SVG animations and making sure to customize them to match the brand's color scheme and vision",
+        details3: "You can find the website live here at www.tienda-eg.com",
+        behance: "https://www.behance.net/gallery/137801865/Tienda-Website-Design",
+        images: [{
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/3b80b4137801865.6212578ac20cc.png",
+                thumbnail: "https://picsum.photos/id/1018/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/8c9f77137801865.6212578ac09d3.png",
+                thumbnail: "https://picsum.photos/id/1015/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/48fbce137801865.6212578ac3f83.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/812513137801865.6212578ac272f.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec5392137801865.6212578ac1b1a.png",
+                thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec5392137801865.6212578ac1b1a.png",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/fac6bb137801865.6212578ac5608.png",
+                thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec5392137801865.6212578ac1b1a.png",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/75ff5c137801865.6212578ac4ad7.png",
+                thumbnail: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec5392137801865.6212578ac1b1a.png",
+            },
+        ],
     },
     {
         id: 2,
-        headerImg: ["../assets/img/greek.png"],
+        headerImg: ["tienda", "../assets/img/tienda.png"],
         imgTitle: ["weatherly"],
-        title: "Tienda",
-        toolsUsed: ["PS, Figma, Behance"],
-        details: "details",
-        shoots: ["greek", "../assets/img/greek.png"],
+        title: "Weatherly",
+        toolsUsed: [
+            ["figma"],
+            ["illustrator"]
+        ],
+        details: "This Project is a website design and implentation, first of all the Logo design was the first step, i used illustrator for this came up with a few ideas, and then the sta    holders selected their favourite pick.",
+        details2: "Afterwards with the brand identity and logo created and finished, i started creating low-fi concepts for how the landing page would look like, then started to slowly transform these desings into high fidelity designs, adding custom UI elements and SVG animations and making sure to customize them to match the brand's color scheme and vision",
+        images: [{
+                original: "https://drive.google.com/file/d/1Czb9K4YWC_gSraufrH-P-5aeYAWCWnn6/view?usp=sharing",
+                thumbnail: "https://picsum.photos/id/1018/250/150/",
+            },
+            {
+                original: "https://picsum.photos/id/1015/1000/600/",
+                thumbnail: "https://picsum.photos/id/1015/250/150/",
+            },
+            {
+                original: "https://picsum.photos/id/1019/1000/600/",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+        ],
     },
     {
         id: 3,
