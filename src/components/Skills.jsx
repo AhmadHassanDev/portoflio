@@ -11,7 +11,7 @@ const Skills = () => {
             <div className='grid custom:grid-cols-3 gap-10 custom:gap-0 justify-center items-center mt-10 custom:mt-0  custom:pt-32 lg:px-20'>
                 <div>
                     <h1 className='text-center font-bebas text-4xl  mb-8'>
-                        UX Researcher
+                        UX Research
                     </h1>
                     <div className='flex justify-center items-center'>
                         <div className=' flex items-center justify-center flex-col w-[70%] bg-dark h-[27rem] rounded-xl'>

@@ -62,8 +62,10 @@ const Project = () => {
                 <h1 className='ml-7 md:ml-20 mt-3 mb-10 font-poppins-l text-xl'>Details About the project</h1>
                 <h1 className='ml-7 md:ml-20 mt-3 mb-10 font-poppins-l text-base w-[80%]'> {ProjectsMap[id - 1].details} </h1>
                 <h1 className='ml-7 md:ml-20 mt-3 mb-10 font-poppins-l text-base w-[80%]'> {ProjectsMap[id - 1].details2} </h1>
+                <h1 className='ml-7 md:ml-20 mt-3 mb-10 font-poppins-l text-base w-[80%]'> {ProjectsMap[id - 1].details3} </h1>
+                <h1 className='ml-7 md:ml-20 mt-3 mb-10 font-poppins-l text-base w-[80%]'> {ProjectsMap[id - 1].details4} </h1>
                 <h1 className='ml-7 md:ml-20 mt-3 mb-10 font-poppins-l text-base w-[80%] underline hover:text-purple'>
-                    <a href="https://www.tienda-eg.com"> {ProjectsMap[id - 1].details3}</a> </h1>
+                    <a href="https://www.tienda-eg.com"> {ProjectsMap[id - 1].liveProject}</a> </h1>
             </div>
             {/*<div>
                 <h1 className='ml-7 md:ml-20 mt-10 mb-2 font-bebas mr-5 text-7xl text-transparent bg-clip-text  
