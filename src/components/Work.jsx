@@ -26,16 +26,16 @@ const Work = () => {
                     Below you’ll find some of my favourite projects
                 </h1>
             </div>
-            <div className='cursor-pointer'>
+            <div className='cursor-pointer' onClick={() => navigate("projects/2")}>
                 <Project title="Weatherly" body="Weatherly is a premuim weather application that focuses on beautiful UI while 
             creating robust and great features. Weatherly features Big Bold icons, stunning Typography, and great features like
             7 day forecasts, Weather alerts and notifications, and much more!" img={Weatherly} />
             </div>
-            <div className='cursor-pointer' onClick={() => navigate('projects/1')}>
+            <div className='cursor-pointer' onClick={() => navigate("projects/1")}>
                 <Project title="Tienda" body="Tienda-EG is a POS system, that supplies it's clients with excellent POS devices and software,
                 they have alot of platform leading features and over 40 satsified clients that vouch for thier excellence" img={Tienda} />
             </div>
-            <div className='cursor-pointer'>
+            <div className='cursor-pointer' onClick={() => navigate("projects/3")}>
                 <Project img={Jpadel} title={"JPadel App Redesign"} body={"JPadel is an egyptian Padel tennis leader and innovater, they have a flutter application on both the App and Play stores that enables you to reserve courts, sign up to tournaments, and much more. This is a redesign of thier application!"} />
             </div>
             <div onClick={() => navigate("/projects")} className='cursor-pointer flex w-full pb-[7%] text-8xl float-left pt-5 custom:pt-10 bg-primary '>

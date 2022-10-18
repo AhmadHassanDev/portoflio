@@ -175,82 +175,256 @@ export const ProjectsMap = [{
             ["figma"],
             ["illustrator"]
         ],
+        details: "Grind is a coffee shop companion app, where you can order whatever you need from the Grind shop and have it delivered to your doorstep easily and effortlessly",
+        details2: "For this project, I was tasked with creating a logo, some mockups and posters for the brand, and then after the brand identity was established and all was good, I would start creating a mobile app design, that is to be later developed in Flutter.",
+        details3: "",
         images: [{
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/22e093126047465.6125952fc09c7.png",
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/786775119959111.60a89b76a6d66.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/b06e94119959111.60a89b76a673e.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ddd8fe119959111.60a89f057cae2.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/35f53c119959111.60a89b76a56df.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/de6001119959111.60a89b76a5f25.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a5c94e119959111.60a7f6e3e61e0.png",
                 thumbnail: "https://picsum.photos/id/1018/250/150/",
             },
             {
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/8857e9126047465.6125952fc0f8f.png",
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/804d1c119959111.60a7f6e3e5b43.png",
                 thumbnail: "https://picsum.photos/id/1015/250/150/",
             },
             {
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2ff818126047465.61259530ec1cc.png",
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/eb88fd119959111.60a7f6e3e5632.png",
                 thumbnail: "https://picsum.photos/id/1019/250/150/",
             },
             {
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/3b889a126047465.61259530ec6b3.png",
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/708db9119959111.60a7f6e38cbd3.png",
                 thumbnail: "https://picsum.photos/id/1019/250/150/",
             },
             {
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/2251b6126047465.6125953082e95.png",
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2c9705119959111.60a7f6e38c7b3.png",
                 thumbnail: "https://picsum.photos/id/1019/250/150/",
             },
             {
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/57d8e7126047465.61259530ebd4b.png",
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6542ce119959111.60a890b27cc50.png",
                 thumbnail: "https://picsum.photos/id/1019/250/150/",
             },
             {
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/440fa9119572533.60a0aed04fe00.png",
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/96ff05119959111.60a7f6e3e4f32.png",
                 thumbnail: "https://picsum.photos/id/1019/250/150/",
             },
             {
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2a48d8119572533.60a0af8530cfe.png",
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/c49fdb119959111.60a7f6e3e40ea.png",
                 thumbnail: "https://picsum.photos/id/1019/250/150/",
             },
             {
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6b1c23119572533.60a0aed0504d2.png",
-                thumbnail: "https://picsum.photos/id/1019/250/150/",
-            },
-            {
-                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/b2cd7f119572533.60a0aed04ef11.png",
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6e3f18119959111.60a7f6e3e4799.png",
                 thumbnail: "https://picsum.photos/id/1019/250/150/",
             },
         ],
     },
     {
         id: 5,
-        headerImg: ["../assets/img/greek.png"],
+        headerImg: ["logofolio", "../assets/img/logofolio.png"],
         imgTitle: ["logofolio"],
-        title: "Tienda",
-        toolsUsed: ["PS, Figma, Behance"],
-        details: "details",
-        shoots: ["greek", "../assets/img/greek.png"],
+        title: "LOGOFOLIO VOL 1",
+        toolsUsed: [
+            ["illustrator"]
+        ],
+        details: "This Project aims to show various Logos i have designed over the time.",
+        details2: "These logos shows different styles of logo design, and serves to demonstrate my illustrator skills.",
+        images: [{
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/df2494120222995.60ad6aa6c045c.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/6a258c120222995.60ad6aa6bfe5b.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/8e8099120222995.60ad6aa7705ce.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ca4dbb120222995.60ad6aa76f2eb.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/54af42120222995.60ad6aa7712f0.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6d0baa120222995.60ad6aa770c3e.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/b73b4b120222995.60ad6aa76f865.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6ee600120222995.60ad6aa76fde0.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/558567120222995.60ad6aa71e7be.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/363264120222995.60ad6aa7718a9.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/0706ec120222995.60ad6aa76eca4.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+        ],
     },
     {
         id: 6,
-        headerImg: ["../assets/img/greek.png"],
+        headerImg: ["xplore", "../assets/img/xplore.png"],
         imgTitle: ["xplore"],
-        title: "Tienda",
-        toolsUsed: ["PS, Figma, Behance"],
-        details: "details",
-        shoots: ["greek", "../assets/img/greek.png"],
+        title: "Xplore",
+        toolsUsed: [
+            ["illustrator"],
+            ["ps"]
+        ],
+        details: "Xplore is a traveling agency that wanted a creative and strong Logo",
+        details2: "Creating the Xplore logo was a treat, the company wanted a bold creative logo that convyes thier vision to thier target audiance, along with some good premuim looking mockups to inspire their users.",
+        images: [{
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cce1ec119371447.609c0105dd9d5.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/02acd0119371447.609c0105dee25.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/12f66d119371447.609c0105ddf6d.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bc7b3a119371447.609c010589c30.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/edcc07119371447.609c01058a427.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/881f23119371447.609c0105e0066.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/52b59d119371447.609c0105dfb32.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/c8a58c119371447.609c0105df5d3.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/d8a3be119371447.609c0105de704.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+        ],
     },
     {
         id: 7,
-        headerImg: ["../assets/img/greek.png"],
+        headerImg: ["bandb", "../assets/img/bandb.png"],
         imgTitle: ["bandb"],
-        title: "Tienda",
-        toolsUsed: ["PS, Figma, Behance"],
-        details: "details",
-        shoots: ["greek", "../assets/img/greek.png"],
+        title: "Bread & Butter",
+        toolsUsed: [
+            ["illustrator"],
+            ["ps"]
+        ],
+        details: "Bread & Butter is a branding project. I was assigned to create a logo, some patterns, and as well as posters for the entity.",
+        details: "The Project is a simple but elegant one, a few mockups, a great logo and some solid text are the basis of ths project, enjoy a slideshow below of the results.",
+        images: [{
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bc6aa1119083719.60969dd5e21d6.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/147bb2119083719.60969dd5e0d64.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/7dcec2119083719.60969dd5e1848.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/357152119083719.60969dd5e032c.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/a09a1d119083719.60969dd66afdb.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/9892c4119083719.60969dd66a080.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/59f3f9119083719.6096aa30a6983.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6656d2119083719.6096aa30a7867.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/33c840119083719.6096aa30a7245.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+        ],
     },
     {
         id: 8,
-        headerImg: ["../assets/img/greek.png"],
+        headerImg: ["akary", "../assets/img/akary.png"],
         imgTitle: ["akary"],
-        title: "Tienda",
-        toolsUsed: ["PS, Figma, Behance"],
-        details: "details",
-        shoots: ["greek", "../assets/img/greek.png"],
+        title: "Akary",
+        toolsUsed: [
+            ["illustrator"],
+            ["ps"]
+        ],
+        details: "AKARY Is an Egyptian based real estate application, that enables users to buy, sell, rent and lease estates through the comfort of their screens",
+        details2: "I was responsible for creating the brand Logo and some mockups and posters to start, as well as a landing page for their website.",
+        images: [{
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/54ade8137799741.6211aff383353.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4f779137799741.6211aff38220a.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/500c23137799741.6211aff1330a7.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/10d3b0137799741.6211aff13387e.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bffc88137799741.6211aff30f5a1.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+            {
+                original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/c7c865137799741.6211b0cd64003.png",
+                thumbnail: "https://picsum.photos/id/1019/250/150/",
+            },
+        ],
     },
 ];
