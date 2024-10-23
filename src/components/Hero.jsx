@@ -69,9 +69,9 @@ const Hero = () => {
                                     creating your next digital experience from scratch is my passion, UX Reaserch, UI Design, and Front-end development on demand
                                 </h1>
                                 <ul className='flex mt-10'>
-                                    <li className='mb-8 mr-7'> <a href="/#"> <img className='w-12' src={Linked} alt="" /></a></li>
-                                    <li className='mb-8 mr-7'> <a href="/#"> <img className='w-12' src={Behance} alt="" /></a></li>
-                                    <li className='mb-8'> <a href="/#"> <img className='w-12' src={Github} alt="" /></a></li>
+                                    <li className='mb-8 mr-7'> <a href="https://www.linkedin.com/in/ahmed-hassan-30550b1b6/" target="_blank"> <img className='w-12' src={Linked} alt="" /></a></li>
+                                    <li className='mb-8 mr-7'> <a href="https://www.behance.net/ahdev" target="_blank"> <img className='w-12' src={Behance} alt="" /></a></li>
+                                    <li className='mb-8'> <a href="https://github.com/AhmadHassanDev" target="_blank"> <img className='w-12' src={Github} alt="" /></a></li>
                                 </ul>
                             </div>
                             <div className='flex w-5/6 ml-2 custom:ml-0 md:col-span-3 col-span-10 justify-self-center'>
