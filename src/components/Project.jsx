@@ -4,7 +4,7 @@ import Arrow from '../assets/img/arrow.svg'
 
 const Project = (props) => {
     return (
-        <div className='grid grid-cols-4 px-10 custom:px-16 pt-14 '>
+        <div className='grid grid-cols-4 px-10 custom:px-16 pt-14 max-h-max '>
             <div className='col-span-1 h-full '>
                 <img className='object-cover h-full ' src={props.img} alt="" />
             </div>
