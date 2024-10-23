@@ -10,15 +10,21 @@ const Footer = () => {
         <div className='mt-20 pb-5'>
             <div className='grid grid-cols-3 justify-between w-[90%] ml-[5%] mr-[5%]'>
                 <div className='font-poppins-l custom:text-base text-[13px]'>
-                    2022 AH - ©
+                    2021-2025 AH©
                 </div>
                 <div className='text-[13px] font-poppins-l custom:text-base'>
                     Made with <img className='inline w-3 custom:w-7' src={Heart} alt="" />
                 </div>
                 <div className='mt-[-5px]'>
-                    <img className='inline w-[17px] mx-2 custom:mx-3 custom:w-9 ' src={Insta} alt="" />
-                    <img className='inline w-[13px] mx-2 custom:mx-3 custom:w-7' src={Whatsapp} alt="" />
-                    <img className='inline w-[13px] mx-2 custom:mx-3 custom:w-7' src={Face} alt="" />
+                    <a href="https://www.instagram.com/ahmaddhassan_/" target="_blank">
+                        <img className='inline w-[17px] mx-2 custom:mx-3 custom:w-9 ' src={Insta} alt="" />
+                    </a>
+                    <a href="https://wa.me/01119523790" target="_blank">
+                        <img className='inline w-[13px] mx-2 custom:mx-3 custom:w-7' src={Whatsapp} alt="" />
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100001855956910" target="_blank">
+                        <img className='inline w-[13px] mx-2 custom:mx-3 custom:w-7' src={Face} alt="" />
+                    </a>
                 </div>
             </div>
         </div>
