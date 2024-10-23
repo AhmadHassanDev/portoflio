@@ -10,6 +10,7 @@ import Github from '../assets/img/github.svg'
 import Work from './Work';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
     gsap.registerPlugin(TextPlugin);
@@ -73,7 +74,10 @@ const Hero = () => {
                                     <li className='mb-8'> <a href="/#"> <img className='w-12' src={Github} alt="" /></a></li>
                                 </ul>
                             </div>
-                            <div className='flex w-5/6 ml-14 custom:ml-0 col-span-3 justify-self-center'>
+                            <div className='flex w-5/6 ml-2 custom:ml-0 md:col-span-3 col-span-10 justify-self-center'>
+                                {/* <div>
+                                    <Spline scene="https://prod.spline.design/MsMYmPTAW919bJsA/scene.splinecode" />
+                                </div> */}
                                 <div className='flex justify-self-center mt-10'>
                                     <img className='heroImg object-scale-down pr-10 ' src={Me} alt="Ahmed Hassan" />
                                 </div>

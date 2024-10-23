@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import '../index.css'
 
 import Logo from '../assets/img/logo.svg'
-import Dark from '../assets/img/dark.svg'
+/* import Dark from '../assets/img/dark.svg' */
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);

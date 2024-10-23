@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import gsap from 'gsap';
 import Grad from '../assets/img/grad.svg'
 import OwlBooks from '../components/OwlBooks'
+import Me from '../assets/img/me.png'
 
 const About = () => {
     const about = gsap.timeline({ repeat: 0 });
@@ -58,6 +59,9 @@ const About = () => {
                         </h1>
                     </div>
                     <div>
+                        <div className='flex justify-self-center mt-10'>
+                            <img className='heroImg object-scale-down mt-10 md:mt-0 w-[300px] md:w-[450px] pr-10 ' src={Me} alt="Ahmed Hassan" />
+                        </div>
                     </div>
                 </div>
                 <div className='pt-14 flex justify-center items-center'>
