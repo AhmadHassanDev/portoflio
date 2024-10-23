@@ -43,7 +43,7 @@ const Project = () => {
                         {ProjectsMap[id - 1].toolsUsed.map((s) => (
                             <img
                                 key={s.id}
-                                className='md:w-full w-[30%] ml-4'
+                                className='md:w-full w-[15%] ml-4'
                                 src={require('../assets/img/' + s + '.svg')}
                                 alt=""
                             />
