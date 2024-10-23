@@ -70,7 +70,7 @@ const Project = () => {
                     {ProjectsMap[id - 1].details4}
                 </h1>
                 <h1 className='ml-7 md:ml-20 mt-3 mb-10 font-poppins-l text-base w-[80%] underline hover:text-purple'>
-                    <a href={ProjectsMap[id - 1].link}>{ProjectsMap[id - 1].liveProject}</a>
+                    <a target="_blank" rel="noopener noreferrer" href={`https://${ProjectsMap[id - 1].link}`}>{ProjectsMap[id - 1].liveProject}</a>
                 </h1>
             </div>
 

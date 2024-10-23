@@ -9,10 +9,9 @@ export const ProjectsMap = [{
         ["figma"],
         ["illustrator"],
         ["next"],
-        /*  ["sanity"] */
     ],
-    details: "This Project is a website design and implentation, first of all the Logo design was the first step, i used illustrator for this came up with a few ideas, and then the sta    holders selected their favourite pick.",
-    details2: "Afterwards with the brand identity and logo created and finished, i started creating low-fi concepts for how the landing page would look like, then started to slowly transform these desings into high fidelity designs, adding custom UI elements and SVG animations and making sure to customize them to match the brand's color scheme and vision",
+    details: "EZeats is set to revolutionize the food and beverage industry in Egypt & Morocco by seamlessly integrating digital menus, ordering, payment processes, and reviews.",
+    details2: "This innovative approach reduces wait times, enhances operational efficiency, and minimizes physical contact, allowing diners to enjoy their meals with ease. Ezeats is setting a new standard for modern dining, bringing cutting-edge technology to the heart of the hospitality industry.",
     liveProject: "You can find the website live here at www.ez-eats.com",
     behance: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/616f81196441997.66f2abf9d6f13.png",
     images: [{
@@ -31,10 +30,112 @@ export const ProjectsMap = [{
         original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/9918b5196441997.66f3cb7685a56.png",
         thumbnail: "https://picsum.photos/id/1019/250/150/",
     },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c679dc196441997.66f3cb7685474.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e1ef02196441997.66f3d2426cb7c.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/1178a6196441997.66f3d2426c216.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
     ],
 },
 {
     id: 2,
+    headerImg: ["beltone", "../assets/img/beltone.png"],
+    imgTitle: ["beltone"],
+    title: "Beltone Mortgage App",
+    behance: "https://www.behance.net/gallery/204417771/Beltone-Mortgage",
+    link: "",
+    toolsUsed: [
+        ["figma"],
+        ["illustrator"],
+        /*  ["sanity"] */
+    ],
+    details: "Beltone Mortgage Finance, a wholly owned subsidiary of Beltone Financial Holding, is a provider of tailored mortgage solutions in Egypt. With a strong emphasis on delivering exceptional value and adopting a trusted financial consultant approach, the company assists clients in making optimal investments aligned with their individual cash flows and financial goals. Through personalized guidance and expert advice",
+    details2: "Beltone Mortgage Finance aims to empower clients to make informed decisions regarding their real estate financing needs. By understanding the unique circumstances of each client, the company ensures that the mortgage solutions offered are customized and tailored to their specific requirements.",
+    liveProject: "",
+    images: [{
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/3616c7204417771.66aa0a19b0f28.png",
+        thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f2c5c5204417771.66aa0a19b3552.png",
+        thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/07bb0f204417771.66aa0a19b39df.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/31e05e204417771.66aa0a19b18a3.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e7ef6c204417771.66aa0a19b2e14.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/595c06204417771.66aa0a19b2987.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/31fa2e204417771.66aa0a19b1d29.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3140b2204417771.66aa0a19b2239.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    ],
+},
+{
+    id: 3,
+    headerImg: ["swiftminis", "../assets/img/swiftminis.png"],
+    imgTitle: ["swiftminis"],
+    title: "SwiftMinis App",
+    behance: "https://www.behance.net/gallery/196442039/SwiftMinis-App",
+    link: "",
+    toolsUsed: [
+        ["figma"],
+        ["illustrator"],
+        /*  ["sanity"] */
+    ],
+    details: "SwiftMinis is an application designed for Verto Technologies, its function is creating virtual greeting cards for different events. Clients can add their users, and start enable them to create customized cards to share with the world",
+    details2: "This application, designed exclusively for Verto Technologies, serves a unique function: it enables the creation of virtual greeting cards tailored to a variety of events and celebrations. The platform allows clients to onboard their users effortlessly, who can then utilize a suite of customization tools to design personalized greeting cards. These cards can be shared across digital platforms, offering a personal touch in a virtual format. Whether for birthdays, holidays, or corporate events, this application makes it possible for users to convey their messages and sentiments in a creative and engaging way, connecting people around the world",
+    liveProject: "",
+    images: [{
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0a78c6196442039.6627c9890b94c.png",
+        thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/fbae65196442039.6627c9890a713.png",
+        thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/30306c196442039.6627d491165e2.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/f6dcc5196442039.6627c9890d74f.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/760f68196442039.6627c9890aeb7.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    {
+        original: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/031b9c196442039.6627c9890c80d.png",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+    ],
+},
+{
+    id: 4,
     headerImg: ["tienda", "../assets/img/tienda.png"],
     imgTitle: ["tienda"],
     title: "Tienda Website",
@@ -78,7 +179,7 @@ export const ProjectsMap = [{
     ],
 },
 {
-    id: 3,
+    id: 5,
     headerImg: ["weatherly", "../assets/img/weatherly.png"],
     imgTitle: ["weatherly"],
     title: "Weatherly",
@@ -150,7 +251,7 @@ export const ProjectsMap = [{
     ],
 },
 {
-    id: 4,
+    id: 6,
     headerImg: ["jpadel", "../assets/img/jpadel.png"],
     imgTitle: ["jpadel"],
     title: "JPadel Redesign",
@@ -205,7 +306,7 @@ export const ProjectsMap = [{
     ],
 },
 {
-    id: 5,
+    id: 7,
     headerImg: ["grind", "../assets/img/grind.png"],
     imgTitle: ["grind"],
     title: "Grind Coffee",
@@ -276,7 +377,7 @@ export const ProjectsMap = [{
     ],
 },
 {
-    id: 6,
+    id: 8,
     headerImg: ["logofolio", "../assets/img/logofolio.png"],
     imgTitle: ["logofolio"],
     title: "LOGOFOLIO VOL 1",
@@ -333,7 +434,7 @@ export const ProjectsMap = [{
     ],
 },
 {
-    id: 7,
+    id: 9,
     headerImg: ["xplore", "../assets/img/xplore.png"],
     imgTitle: ["xplore"],
     title: "Xplore",
@@ -383,7 +484,7 @@ export const ProjectsMap = [{
     ],
 },
 {
-    id: 8,
+    id: 10,
     headerImg: ["bandb", "../assets/img/bandb.png"],
     imgTitle: ["bandb"],
     title: "Bread & Butter",
@@ -433,7 +534,7 @@ export const ProjectsMap = [{
     ],
 },
 {
-    id: 9,
+    id: 11,
     headerImg: ["akary", "../assets/img/akary.png"],
     imgTitle: ["akary"],
     title: "Akary",

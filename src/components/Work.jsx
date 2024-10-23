@@ -7,9 +7,10 @@ import ArrowAlt from '../assets/img/arrowAlt.svg'
 import FormCTA from './FormCTA'
 import Skills from './Skills'
 import Quote from './Quote'
-import Weatherly from '../assets/img/weatherly.png'
-import Tienda from '../assets/img/tienda.png'
-import Jpadel from '../assets/img/jpadel.png'
+import EZeats from '../assets/img/ezeats.png'
+import Beltone from '../assets/img/beltone.png'
+import SwiftMinis from '../assets/img/swiftminis.png'
+
 
 const Work = () => {
     const navigate = useNavigate()
@@ -26,17 +27,14 @@ const Work = () => {
                     Below you’ll find some of my favourite projects
                 </h1>
             </div>
-            <div className='cursor-pointer' onClick={() => navigate("projects/2")}>
-                <Project title="Weatherly" body="Weatherly is a premuim weather application that focuses on beautiful UI while 
-            creating robust and great features. Weatherly features Big Bold icons, stunning Typography, and great features like
-            7 day forecasts, Weather alerts and notifications, and much more!" img={Weatherly} />
-            </div>
             <div className='cursor-pointer' onClick={() => navigate("projects/1")}>
-                <Project title="Tienda" body="Tienda-EG is a POS system, that supplies it's clients with excellent POS devices and software,
-                they have alot of platform leading features and over 40 satsified clients that vouch for thier excellence" img={Tienda} />
+                <Project title="EZeats Landing" body="EZeats is set to revolutionize the food and beverage industry in Egypt & Morocco by seamlessly integrating digital menus, ordering, payment processes, and reviews, This innovative approach reduces wait times, enhances operational efficiency, and minimizes physical contact, allowing diners to enjoy their meals with ease. Ezeats is setting a new standard for modern dining, bringing cutting-edge technology to the heart of the hospitality industry." img={EZeats} />
+            </div>
+            <div className='cursor-pointer' onClick={() => navigate("projects/2")}>
+                <Project title="Bletone Mortage App" body="Beltone Mortgage Finance aims to introduce new experience in selling mortgage solutions. Under the supervision of the Financial Regulatory Authority with License No.23 dated 16-11-2023 & Commercial Register No.146020" img={Beltone} />
             </div>
             <div className='cursor-pointer' onClick={() => navigate("projects/3")}>
-                <Project img={Jpadel} title={"JPadel App Redesign"} body={"JPadel is an egyptian Padel tennis leader and innovater, they have a flutter application on both the App and Play stores that enables you to reserve courts, sign up to tournaments, and much more. This is a redesign of thier application!"} />
+                <Project img={SwiftMinis} title={"SwiftMinis App"} body={"SwiftMins is an application designed for Verto Technologies, its function is creating virtual greeting cards for different events. Clients can add their users, and enable them to create customized cards to share with the world"} />
             </div>
             <div onClick={() => navigate("/projects")} className='cursor-pointer flex w-full pb-[7%] text-8xl float-left pt-5 custom:pt-10 bg-primary '>
                 <h1 className='inline ml-[5%] mt-[2%] text-5xl custom:text-8xl text-left text-transparent bg-clip-text  
